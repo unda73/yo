@@ -26,7 +26,9 @@
 .my-float{
 	margin-top:16px;
 }
-
+.facebook-float {
+    bottom: 130px; /* Se posiciona 70px más arriba que WhatsApp */
+}
 .pulse {
   animation: pulse-animation 2s infinite;
 }
