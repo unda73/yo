@@ -1,3 +1,14 @@
+   body {
+        background-image: url('Imagenes/sabrina5.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    h1 {font-style: italic; color: black;}
+    h2 {font-style: italic; color: blue;}
+    a {font-style: italic; color:red;}
+    a:hover {font-style: italic; color: blue;}
+
 .float{
 	position:fixed;
 	width:60px;
@@ -61,4 +72,8 @@
 .index2 {
   width: 100%;
   height: 420px;
+}
+.img2{
+  width: 500%;
+  height: 200%;
 }
