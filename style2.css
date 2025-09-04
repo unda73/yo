@@ -120,3 +120,42 @@
             background-color: rgb(255, 0, 0);
             color: white;
         }
+
+.img5{
+  display: flex;             
+  overflow-x: auto;     
+  overflow-y: hidden;       
+  gap: 40px;               
+  padding: 10px;
+  scroll-behavior: smooth; 
+}
+.img5 h4 {
+  font-size: 24px; 
+  color: yellow;
+}
+
+.img5::-webkit-scrollbar {
+  height: 8px;          
+}
+
+.img5::-webkit-scrollbar-thumb {
+  background: transparent;         
+  border-radius: 10px;
+}
+
+.Autor {
+  text-align: center;
+  font-size: 26px;
+  color: chartreuse;
+}
+.Autor2 {
+  text-align: center;
+  font-size: 26px;
+  color: yellow;
+}
+
+.Titulo {
+  text-align: center;
+  font-size: 43px;
+  color: rgb(255, 0, 0);
+}
