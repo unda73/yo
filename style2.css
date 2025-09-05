@@ -51,6 +51,7 @@
 
 .pulse {
   animation: pulse-animation 2s infinite;
+  
 }
 
 @keyframes pulse-animation {
@@ -114,13 +115,14 @@
             border: none;
             padding: 10px 20px;
             border-radius: 5px;
-            cursor: pointer;
             margin-top: 20px;
+                     cursor: url('Imagenes/sc-cursor.svg'), auto;
         }
 
         .my-button2:hover {
             background-color: rgb(255, 0, 0);
             color: white;
+                     cursor: url('Imagenes/sc-cursor.svg'), auto;
         }
 
 .img5{
@@ -130,6 +132,7 @@
   gap: 40px;               
   padding: 10px;
   scroll-behavior: smooth; 
+  cursor: url('Imagenes/sc-cursor.svg'), auto;
 }
 .img5 h4 {
   font-size: 24px; 
@@ -160,4 +163,8 @@
   text-align: center;
   font-size: 43px;
   color: rgb(255, 0, 0);
+}
+
+.cursor {
+         cursor: url('Imagenes/sc-cursor.svg'), auto;
 }
