@@ -168,3 +168,10 @@
 .cursor {
          cursor: url('Imagenes/sc-cursor.svg'), auto;
 }
+
+.confeti {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+}

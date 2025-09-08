@@ -103,7 +103,16 @@
     <i class="fab fa-tiktok my-float"></i>
 </a>
   </div>
+  <button id="celebrarBtn" class="my-button2">¡Festejar a Sabrina! 🎉</button>
+<script src="celebration.js"></script>
+<script>
+  const confetti = new Confetti(120); // cantidad de papelitos
+  document.getElementById("celebrarBtn").addEventListener("click", () => {
+    confetti.lanzar();
+  });
+</script>
 
+<span></span>
    <button class="my-button2" onclick="location.href='index2.html'">Menu</button>
    <span></span>
    <button class="my-button2" onclick="location.href='index3.html'">A CERCA DE MI</button>
