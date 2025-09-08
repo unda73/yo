@@ -1,28 +1,33 @@
 class Confetti {
-  constructor(cantidad = 100) {
+  constructor(cantidad = 100, foto = "Imagenes/short n.jpeg") {
     this.cantidad = cantidad;
+    this.foto = foto; // la foto que quieres que caiga
   }
 
   lanzar() {
     for (let i = 0; i < this.cantidad; i++) {
-      let confeti = document.createElement("div");
-      confeti.classList.add("confeti");
-      document.body.appendChild(confeti);
+      // creamos una imagen en vez de un div
+      let img = document.createElement("img");
+      img.src = this.foto;
+      img.classList.add("confeti-img");
+      document.body.appendChild(img);
 
-      let size = Math.random() * 8 + 5 + "px";
-      confeti.style.width = size;
-      confeti.style.height = size;
+      // tamaño aleatorio
+      let size = Math.random() * 40 + 30 + "px";
+      img.style.width = size;
+      img.style.height = size;
 
-      confeti.style.left = Math.random() * window.innerWidth + "px";
-      confeti.style.top = "-10px";
+      // posición inicial
+      img.style.position = "absolute";
+      img.style.left = Math.random() * window.innerWidth + "px";
+      img.style.top = "-60px";
+      img.style.pointerEvents = "none";
 
-      confeti.style.backgroundColor =
-        "hsl(" + Math.random() * 360 + ", 100%, 50%)";
-
-      let animacion = confeti.animate(
+      // animación
+      let animacion = img.animate(
         [
-          { transform: "translateY(0)" },
-          { transform: "translateY(" + window.innerHeight + "px)" }
+          { transform: "translateY(0) rotate(0deg)" },
+          { transform: "translateY(" + window.innerHeight + "px) rotate(360deg)" }
         ],
         {
           duration: Math.random() * 3000 + 2000,
@@ -31,11 +36,8 @@ class Confetti {
         }
       );
 
-      animacion.onfinish = () => confeti.remove();
+      animacion.onfinish = () => img.remove();
     }
   }
 }
 
-
-// Exportamos la clase si quieres usar módulos
-// export default Confetti;
