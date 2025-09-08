@@ -14,6 +14,14 @@
 </head>
 
 <body>
+<button id="celebrarBtn" class="my-button2">Album del Año</button>
+<script src="celebration.js"></script>
+<script>
+  const confetti = new Confetti(120); // cantidad de papelitos
+  document.getElementById("celebrarBtn").addEventListener("click", () => {
+    confetti.lanzar();
+  });
+</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <a href="https://open.spotify.com/artist/74KM79TiuVKeVCqs8QtB0B" class="float spotify-float pulse" target="_blank">
     <i class="fab fa-spotify my-float"></i>
@@ -103,14 +111,6 @@
     <i class="fab fa-tiktok my-float"></i>
 </a>
   </div>
-  <button id="celebrarBtn" class="my-button2">¡Festejar a Sabrina! 🎉</button>
-<script src="celebration.js"></script>
-<script>
-  const confetti = new Confetti(120); // cantidad de papelitos
-  document.getElementById("celebrarBtn").addEventListener("click", () => {
-    confetti.lanzar();
-  });
-</script>
 
 <span></span>
    <button class="my-button2" onclick="location.href='index2.html'">Menu</button>
