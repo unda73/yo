@@ -14,6 +14,23 @@
 </head>
 
 <body>
+
+<div id="anuncio">
+    <div class="contenido">
+      <button class="cerrar" onclick="cerrarAnuncio()">✖</button>
+      <a href="https://www.billboard.com/espanol/noticias/premios-mtv-videos-musicales-2025-lista-de-ganadores-1236060993/" target="_blank" rel="noopener noreferrer">
+        <img src="Imagenes/WhatsApp Image 2025-09-09 at 10.32.30 AM.jpeg" alt="Anuncio promocional">
+      </a>
+      <p>¡Haz clic en el anuncio para más información!</p>
+    </div>
+  </div>
+
+    <script>
+    function cerrarAnuncio() {
+      document.getElementById("anuncio").style.display = "none";
+    }
+  </script>
+
 <button id="celebrarBtn" class="my-button2">Album del Año</button>
 <script src="celebration.js"></script>
 <script>
