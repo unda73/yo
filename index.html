@@ -14,6 +14,24 @@
 </head>
 
 <body>
+  <div id="anuncio">
+    <div class="contenido">
+      <button class="cerrar" onclick="cerrarAnuncio()">✖</button>
+      <a href="https://www.billboard.com/espanol/noticias/premios-mtv-videos-musicales-2025-lista-de-ganadores-1236060993/" target="_blank" rel="noopener noreferrer">
+        <img src="Imagenes/anuncio.jpeg" alt="Anuncio promocional">
+      </a>
+      <p>¡Haz clic en el anuncio para más información!</p>
+    </div>
+  </div>
+
+    <script>
+    function cerrarAnuncio() {
+      document.getElementById("anuncio").style.display = "none";
+    }
+  </script>
+
+
+
 <button id="celebrarBtn" class="my-button2">Album del Año</button>
 <script src="celebration.js"></script>
 <script>
@@ -119,5 +137,7 @@
    <button class="my-button2" onclick="location.href='index3.html'">A CERCA DE MI</button>
     <footer class="cursor">
         <p style="font-size: 25px; color:skyblue;">Copyright © 2025 Sergio Lopez Unda</p>
+        <p style="font-size: 20px; color:skyblue;">All rights reserved.</p>
+    </footer>
 </body>
 </html>
